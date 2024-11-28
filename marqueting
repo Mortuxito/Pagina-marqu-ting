@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agència de Màrqueting Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+    <div class="container">
+        <h1>Mauro Velasco | Agència Digital Pro</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-nosaltres">Sobre Nosaltres</a></li>
+                <li><a href="#serveis">Serveis</a></li>
+                <li><a href="#testimonis">Testimonis</a></li>
+                <li><a href="#contacte">Contacte</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    
+    <section class="hero">
+        <h2>Porta el teu negoci al següent nivell</h2>
+        <p>Transformem la teva presència digital amb estratègies efectives.</p>
+        <a href="#contacte" class="cta">Contacta'ns</a>
+    </section>
+
+    <section id="sobre-nosaltres">
+        <h2>Sobre Nosaltres</h2>
+        <p>Som una agència especialitzada en màrqueting digital amb l'objectiu d'ajudar empreses i emprenedors 
+        a créixer en l'entorn digital. Amb anys d'experiència en el sector, oferim serveis personalitzats i 
+        estratègies innovadores per millorar la visibilitat, augmentar les vendes i consolidar la marca dels nostres clients.</p>
+        <p>Creiem en la importància de connectar amb el públic adequat mitjançant continguts de qualitat, campanyes 
+        de publicitat efectives i una presència coherent a les xarxes socials i als cercadors.</p>
+    </section>
+
+    <section id="serveis">
+        <h2>Serveis</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Gestió de Xarxes Socials</h3>
+                <p>Millorem la teva presència a Instagram, Facebook i més.</p>
+            </div>
+            <div class="service">
+                <h3>SEO</h3>
+                <p>Fes que el teu negoci sigui més visible a Google.</p>
+            </div>
+            <div class="service">
+                <h3>Campanyes de Publicitat</h3>
+                <p>Cream campanyes efectives a Google Ads i xarxes socials.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonis">
+        <h2>Testimonis</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"L'agència va triplicar les nostres vendes en només 3 mesos!"</p>
+                <h4>- Anna P., Clienta Satisfeta</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Ara som visibles a Google gràcies al SEO que ens van implementar."</p>
+                <h4>- Marc R., Empresari</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacte">
+        <h2>Contacte</h2>
+        <form>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="missatge">Missatge:</label>
+            <textarea id="missatge" name="missatge" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Agència Digital Pro. Tots els drets reservats.</p>
+    </footer>
+</body>
+</html>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+<button id="scrollTop" style="display:none;">Torna a dalt</button>
+<script src="script.js"></script>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #0056b3;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f4f4f4;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #0056b3;
+}
+
+.hero .cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+
+.service-container, .testimonial-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service, .testimonial {
+    flex: 1;
+    min-width: 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    margin-top: 0.5rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+// script.js
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita el envío por defecto del formulario
+
+    const nom = document.getElementById('nom').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const missatge = document.getElementById('missatge').value.trim();
+
+    if (!nom || !email || !missatge) {
+        alert('Si us plau, completa tots els camps.');
+        return;
+    }
+
+    alert(`Gràcies, ${nom}, per contactar amb nosaltres!`);
+    this.reset(); // Resetea el formulario
+});
+// script.js
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault(); // Evita el comportamiento por defecto
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+const scrollTopBtn = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 200) {
+        scrollTopBtn.style.display = 'block';
+    } else {
+        scrollTopBtn.style.display = 'none';
+    }
+});
+
+scrollTopBtn.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+// script.js
+const heroMessage = document.querySelector('.hero h2');
+const hour = new Date().getHours();
+
+if (hour < 12) {
+    heroMessage.textContent = 'Bon dia! Porta el teu negoci al següent nivell';
+} else if (hour < 18) {
+    heroMessage.textContent = 'Bona tarda! Porta el teu negoci al següent nivell';
+} else {
+    heroMessage.textContent = 'Bona nit! Porta el teu negoci al següent nivell';
+}
